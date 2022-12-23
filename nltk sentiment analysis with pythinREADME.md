@@ -1,5 +1,5 @@
 # Data-Science-
-Churn Analysis on HR_comma_sep.csv file
+nltk sentiment analysis on review data
 =======================================
 author: Kuuku Baffoe
 
