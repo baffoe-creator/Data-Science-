@@ -3,12 +3,14 @@ import pandas as pd  # for dataframes
 import matplotlib.pyplot as plt # for plotting graphs
 import seaborn as sns # for plotting graphs
  
+#import data and preprocess
 data = pd.read_csv("C:/Users/HP/Desktop/ds datasets/HR_comma_sep.csv ")
 data.head()
 data.info()
 left = data.groupby('left')
 left.mean()
 left_count=data.groupby('left').count()
+#Draw Bar graph
 plt.bar(left_count.index.values, left_count['satisfaction_level'])
 plt.xlabel('Employees Left Company')
 plt.ylabel('Number of Employees')
